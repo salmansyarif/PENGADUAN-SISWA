@@ -1,27 +1,40 @@
+## Apa itu Web Pengaduan
+web Pengaduan adalah website untuk melaporkan kejahatan atau keburukan siswa 
 
-## Installation
 
-Install my-project with npm
+## Fitur apa saja yang tersedia di Web Pengaduan?
+- Autentikasi Guru & Siswa
+- Guru & CRUD
+- Siswa & CRUD
+- laporkan & CRUD
+- DLL
+
+## install
+
+1. Clone Repository
 
 ```bash
-  npm install my-project
-  cd my-project
-```
-
-## Setup
- - buka direktori project di terminal anda.
- - ketikan command : cp .env.example .env (copy paste file .env.example)
- - buat database
-```bash
-buka direktori project di terminal anda.
-```
-ketikan command : cp .env.example .env (copy paste file .env.example)
-buat database
-Lalu ketik command dibawah ini
-
+ git clone https://github.com/adhiariyadi/Toko-Online-Laravel.git
+cd Toko-Online-Laravel
 composer install
-php artisan optimize:clear
-php artisan key:generate (generate app key)
-php artisan migrate (migrasi database)
-php artisan db:seed
+cp .env.example .env
+```
+2. Buka .env lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai
+
+```bash
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+3. Instalasi website
+
+```bash
+php artisan key:generate
+php artisan migrate --seed
+```
+
+4. Jalankan website
+```bash
     
