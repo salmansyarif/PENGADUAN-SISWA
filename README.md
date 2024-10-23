@@ -1,3 +1,4 @@
+
 ## Apa itu Web Pengaduan
 web Pengaduan adalah website untuk melaporkan kejahatan atau keburukan siswa 
 
@@ -37,4 +38,5 @@ php artisan migrate --seed
 
 4. Jalankan website
 ```bash
-    
+php artisan serve
+```
